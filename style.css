@@ -389,6 +389,7 @@ strong{
   height: 32px;
   background: #111F23;
   align-items: center;
+  user-select: text !important;
 }
 
 
@@ -397,11 +398,12 @@ strong{
   display: -webkit-flex;
   display: flex;
   gap: 8px;
-  color: #15c6bb
+  color: #15c6bb;
+  user-select: text !important;
 }
 
 .secure-text {
-  user-select: text;
+  user-select: text !important;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   text-align: center;
@@ -691,6 +693,7 @@ strong{
   }
 
 }
+
 
 
 
