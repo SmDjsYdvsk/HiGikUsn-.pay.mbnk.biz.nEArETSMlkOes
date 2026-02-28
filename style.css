@@ -112,6 +112,16 @@ transform: rotate(360deg);
   left:5%;
   z-index: 7;
 }
+
+.changeColor{
+  position: absolute;
+  min-width: 15%;
+  aspect-ratio: 1 / 1;
+  bottom: 1%;
+  left:5%;
+  z-index: 7;
+}
+
 .ticket-wrapper {
   position: relative;
   width: 100%;
@@ -693,6 +703,7 @@ strong{
   }
 
 }
+
 
 
 
