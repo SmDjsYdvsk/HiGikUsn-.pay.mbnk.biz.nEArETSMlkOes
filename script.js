@@ -158,10 +158,12 @@ window.onload = function () {
                     elem2.style.color = "rgba(11, 106, 153, 1)";
                     break;        
             }
+            localStorage.setItem('colorNumber', colorNumber);
         }
     });
 
 };
+
 
 
 
