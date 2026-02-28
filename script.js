@@ -68,8 +68,28 @@ function calculateAndDisplay(){
     if (isNaN(colorNumber) || colorNumber >= 5) {
         colorNumber = 0;
     }
-    elem1.style.backgroundColor = "rgba(74, 91, 184, 0.1)";
-    elem2.style.color = "rgba(74, 91, 184, 1)";
+    switch(colorNumber){
+        case 0:
+            elem1.style.backgroundColor = "rgba(74, 91, 184, 0.1)";
+            elem2.style.color = "rgba(74, 91, 184, 1)";
+            break;   
+        case 1:
+            elem1.style.backgroundColor = "rgba(13, 104, 98, 0.1)";
+            elem2.style.color = "rgba(13, 104, 98, 1)";
+            break;
+        case 2:
+            elem1.style.backgroundColor = "rgba(11, 106, 153, 0.1)";
+            elem2.style.color = "rgba(11, 106, 153, 1)";
+            break;
+        case 3:
+            elem1.style.backgroundColor = "rgba(13, 104, 98, 0.1)";
+            elem2.style.color = "rgba(13, 104, 98, 1)";
+            break;
+        case 4:
+            elem1.style.backgroundColor = "rgba(11, 106, 153, 0.1)";
+            elem2.style.color = "rgba(11, 106, 153, 1)";
+            break;        
+    }
     
     let display = document.querySelector('#timer');
     let durationInSeconds = 60 * 90;
