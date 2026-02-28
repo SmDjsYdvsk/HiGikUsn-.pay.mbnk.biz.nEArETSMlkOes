@@ -126,7 +126,7 @@ window.onload = function () {
             const elem1 = document.querySelector('.secure-wrapper');
             const elem2 = document.querySelector('.secure-block');
             let colorNumber = Number(localStorage.getItem('colorNumber'));
-            if (!colorNumber || colorNumber >= 5) {
+            if (isNaN(colorNumber) || colorNumber >= 5) {
                 colorNumber = 0;
             }
             else{
@@ -163,6 +163,7 @@ window.onload = function () {
     });
 
 };
+
 
 
 
