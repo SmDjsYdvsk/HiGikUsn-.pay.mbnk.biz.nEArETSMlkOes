@@ -74,8 +74,8 @@ function calculateAndDisplay(){
             elem2.style.color = "rgba(74, 91, 184, 1)";
             break;   
         case 1:
-            elem1.style.backgroundColor = "rgba(13, 104, 98, 0.1)";
-            elem2.style.color = "rgba(13, 104, 98, 1)";
+            elem1.style.backgroundColor = "rgba(139, 65, 154, 0.1)";
+            elem2.style.color = "rgba(139, 65, 154, 1)";
             break;
         case 2:
             elem1.style.backgroundColor = "rgba(11, 106, 153, 0.1)";
@@ -166,8 +166,8 @@ window.onload = function () {
                     elem2.style.color = "rgba(74, 91, 184, 1)";
                     break;   
                 case 1:
-                    elem1.style.backgroundColor = "rgba(13, 104, 98, 0.1)";
-                    elem2.style.color = "rgba(13, 104, 98, 1)";
+                    elem1.style.backgroundColor = "rgba(139, 65, 154, 0.1)";
+                    elem2.style.color = "rgba(139, 65, 154, 1)";
                     break;
                 case 2:
                     elem1.style.backgroundColor = "rgba(11, 106, 153, 0.1)";
@@ -187,6 +187,7 @@ window.onload = function () {
     });
 
 };
+
 
 
 
