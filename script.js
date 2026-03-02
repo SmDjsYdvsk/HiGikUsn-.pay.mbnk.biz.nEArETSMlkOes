@@ -146,7 +146,6 @@ window.onload = function () {
                 localStorage.removeItem('ticketNumber');
                 localStorage.removeItem('purchaseDate');
                 localStorage.removeItem('ticketEndTime');
-                localStorage.removeItem('colorNumber');
                 location.reload();
             }
         }
@@ -187,6 +186,7 @@ window.onload = function () {
     });
 
 };
+
 
 
 
