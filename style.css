@@ -181,12 +181,12 @@ strong{
   font-weight: 400;
 }
 
-
 .details {
     width: 100%;
     background: #F5F5F5;
     padding: 32px 0;
     text-align:left;
+    display: none;
 }
 .details-container {
     display: -webkit-box;
@@ -547,6 +547,7 @@ strong{
   padding: 12px 18px;
   background: -webkit-linear-gradient(359deg,rgba(172,218,189,.5) 0%,rgba(170,212,248,.5) 100%),#FFF;
   background: linear-gradient(91deg,rgba(172,218,189,.5) 0%,rgba(170,212,248,.5) 100%),#FFF;
+  background: var(--background-timer);
   border-radius: 100px;
   display: inline-flex;
   align-items: center;
@@ -558,11 +559,32 @@ strong{
   line-height: 16px;
 }
 
-#timerCircle {
-      transform: rotate(-90deg); /* Adjusts the starting position of the stroke */
-      width: 14px;
-      height: 14px;
-      margin-right:3px;
+.ticket-layout-timer-indicator {
+    width: 16px;
+    height: 16px;
+    -webkit-align-self: center;
+    align-self: center;
+    padding: 1px
+}
+
+.countdown-ring {
+    -webkit-transform: rotateZ(-90deg);
+    transform: rotate(-90deg)
+}
+
+.ring-progress {
+    stroke-dasharray: 420px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 8px;
+    stroke: var(--progress-color);
+    fill: none
+}
+
+.ring {
+    stroke-width: 8px;
+    stroke: var(--ring-color);
+    fill: none
 }
 
 .timer {
@@ -672,6 +694,7 @@ strong{
   justify-content: center;
   background: -webkit-linear-gradient(359deg,rgba(172,218,189,.5) 0%,rgba(170,212,248,.5) 100%),#FFF;
   background: linear-gradient(91deg,rgba(172,218,189,.5) 0%,rgba(170,212,248,.5) 100%),#FFF;
+  background: var(--background-timer);
   border-radius: 100px;
   height: 36px;
   font-family: Lato;
