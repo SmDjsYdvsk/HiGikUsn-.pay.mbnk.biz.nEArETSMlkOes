@@ -7,8 +7,6 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="preload" href="fonts/lato-variable--latin-basic.woff2" as="font" crossorigin="">
-  <link rel="preload" href="fonts/lato-variable--cyrillic-basic.woff2" as="font" crossorigin="">
 </head>
 <body>
   <div class = "loader-container" id = "load"> <div class="loader"></div></div>
@@ -39,10 +37,15 @@
       <div class="ticket-info">
         <span id="ticket-count">1</span> квиток
       </div>
-      <div class="timer-container">
-      <svg id="timerCircle" width="28" height="28" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="11" stroke="#17954D" stroke-width="1.5" fill="none"></circle>
-      </svg>
+      <div class="timer-container" id = "timer-wrapper">
+        <div id="ticket-timer-image" class="ticket-layout-timer-indicator">
+          <div style="text-align: center;">
+            <svg viewBox="0 0 135 135" class="countdown-ring" aria-hidden="true" style="width: 100%; height: 100%;">
+                <circle class="ring" r="63" cx="68" cy="67"></circle>
+                <circle class="ring-progress" id="ring-progress" r="63" cx="68" cy="67" style="stroke-dashoffset: 420" ></circle>
+            </svg>
+					</div>
+        </div>
         <div class="timer">Квиток дійсний — <span id="timer"></span></div>
       </div>
       <div class="dotted-line">
@@ -52,11 +55,7 @@
     </div>
   </div>
 	<div class="changeColor" id="changeColor"></div>
-  <div id = "reset-div" class="reopen-message">Ви зможете повторно відкрити цю<br>сторінку через історію браузера</div> 
+  <div id = "reset-div" class="reopen-message">Ви зможете повторно відкрити цю<br>сторінку через історію браузера</div>
+  <div class="details"><div class="details-container"><button id="back-button" aria-label="Назад" class="back-button main-layout--icon-button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21M10 19L3 12L10 19ZM3 12L10 5L3 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><h1 class="details-title">Деталі квитка</h1><div class="details-wrapper"><div class="details-block block-row"><div class="ticket-details--info-block"><p class="info-block info-title"><strong>Ваш перевізник</strong></p><p class="info-description main-info-description">Миколаївелектротранс Тролейбус</p></div><div class="ticket-details--info-block logo-wrapper" aria-hidden="true"><div class="info-logo" style="background-image: url('images/logo.png')" aria-hidden="true"></div></div></div><div class="details-block block-row"><div class="ticket-details--info-block"><p class="info-block info-title first-letter-capitalize"><strong>Квиток</strong></p><p class="info-description main-info-description first-letter-capitalize">Повний</p></div><div class="ticket-details--info-block"><p class="info-block info-title"><strong>Вартість</strong></p><p class="info-description main-info-description" style="margin-left: auto;">8  грн</p></div></div><div class="details-block block-column"><div class="ticket-details--info-block"><p class="info-block"><strong>Код ЄДРПОУ</strong></p><p class="info-description"></p></div><div class="ticket-details--info-block"><p class="info-block"><strong>Основний контакт</strong></p><p class="info-description"><a href="tel:"></a></p></div><div class="ticket-details--info-block"><p class="info-block"><strong>Адреса</strong></p><p class="info-description"></p></div></div><div class="details-block block-column"><div class="ticket-details--info-block"><p class="info-block"><strong>Страховик</strong></p><p class="info-description"></p></div><div class="ticket-details--info-block"><p class="info-block"><strong>Номер договору</strong></p><p class="info-description"></p></div></div></div><div class="plash-logo"><img src="images/plash.png" alt="plash" class="plash"/></svg></div></div></div>
 </body>
 </html>
-
-
-
-
-
